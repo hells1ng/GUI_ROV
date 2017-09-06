@@ -7,7 +7,7 @@
 #include <QMessageLogger>
 
 #if QT_VERSION < QT_VERSION_CHECK(5, 5, 0)
-#define qInfo       qDebug
+#define qInfo qDebug
 //#define qWarning    qDebug
 //#define qFatal      qDebug
 //#define qCritical   qDebug
@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
     settings = new Settings();
     joystick = new Joystick();
 
-//    qInfo(logInfo()) << "Objects loaded";
+    qInfo(logInfo()) << "Objects loaded";
 
     initMainWindow();
     initServer();
