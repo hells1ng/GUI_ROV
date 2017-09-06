@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
     settings = new Settings();
     joystick = new Joystick();
 
-    qInfo(logInfo()) << "Objects loaded";
+//    qInfo(logInfo()) << "Objects loaded";
 
     initMainWindow();
     initServer();
